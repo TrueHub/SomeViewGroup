@@ -4,9 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context="com.loneyang.someviewgroup.MainActivity">
 
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tv_bg"
+        style="@style/text_flag_01"
+        android:drawableEnd="@drawable/search_black_24dp"
+        android:textColorHint="#62262829"
+        android:textSize="15sp"
+        android:hint="吾与徐公熟美"/>
+
     <com.loneyang.someviewgroup.veiw.FlowLayout
+        android:id="@+id/flowLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -15,7 +28,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/tv_bg"
             style="@style/text_flag_01"
-            android:text="技术要吊"
+            android:text="猿气满满"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -35,7 +48,7 @@
             android:layout_height="wrap_content"
             android:background="@drawable/tv_bg"
             style="@style/text_flag_01"
-            android:text="方术论"
+            android:text="水逆结束"
             />
         <TextView
             android:layout_width="wrap_content"
@@ -63,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/tv_bg"
-            android:text="如果当前行\n剩余空间不足，\n则自动添加到下一行。\n有点所有的控件都往左飘的感觉"
+            android:text="如果当前行剩余空间不足，则自动添加到下一行。有点所有的控件都往左飘的感觉"
             style="@style/text_flag_01"
             />
         <TextView
@@ -76,7 +89,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/tv_bg"
-        android:text="VONE"
+        android:text="大帅比"
         style="@style/text_flag_01"
         />
     </com.loneyang.someviewgroup.veiw.FlowLayout>
