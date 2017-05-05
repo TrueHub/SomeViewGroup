@@ -33,16 +33,4 @@ public class MainActivity extends AppCompatActivity {
         flowLayout = (FlowLayout) findViewById(R.id.flowLayout);
     }
 
-    private void submit() {
-        // validate
-        String editTextString = editText.getText().toString().trim();
-        if (TextUtils.isEmpty(editTextString)) {
-            Toast.makeText(this, "吾与徐公熟美", Toast.LENGTH_SHORT).show();
-            return;
-        }
-
-        // TODO validate success, do something
-
-
-    }
 }

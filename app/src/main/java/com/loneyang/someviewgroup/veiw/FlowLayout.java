@@ -126,12 +126,12 @@ public class FlowLayout extends ViewGroup {
                         selectedIndex = finalI;
                         TextView tv = (TextView) v;
                         childSelcted = (String) tv.getText();
-                        mOnChildSelectedListener.onChildSelected(childSelcted,v);
                     } else {//点击的是已经选中的view，取消选中效果
                         selectedIndex = -1;
                         v.setBackground(getResources().getDrawable(R.drawable.tv_bg));
                         childSelcted = null;
                     }
+                        mOnChildSelectedListener.onChildSelected(childSelcted,v);
 
                 }
             });
